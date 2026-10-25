@@ -403,7 +403,7 @@ h2 {
 
 .features p {
   margin: 0;
-  max-width: 36ch;
+  max-width: 28em;
 }
 
 .phrases {
