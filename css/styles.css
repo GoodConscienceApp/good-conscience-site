@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header);
 }
 
 body {
@@ -79,13 +80,10 @@ a {
 }
 
 .site-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 30;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+  background: #2563EA;
 }
 
 .bar {
@@ -307,7 +305,7 @@ h1 {
 }
 
 .band {
-  scroll-margin-top: 0;
+  scroll-margin-top: var(--header);
   max-width: none;
   width: 100%;
   margin: 0;
@@ -657,16 +655,7 @@ h2 {
 
 /* Real orb fields. Files are the supplied PNGs, scaled and cropped with cover. */
 .home .hero {
-  margin-top: calc(var(--header) * -1);
-  padding-top: calc(36px + var(--header));
   background-image: url("../assets/bg/bg-orb-05.png");
-}
-
-@media (min-width: 980px) {
-  .home .hero {
-    padding-top: calc(54px + var(--header));
-    min-height: 100vh;
-  }
 }
 
 .home #how {
