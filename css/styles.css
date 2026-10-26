@@ -421,6 +421,13 @@ h2 {
   padding: 0;
   display: grid;
   gap: 10px;
+  scroll-margin-top: calc(var(--header) + 16px);
+}
+
+@media (max-width: 979px) {
+  #features {
+    scroll-margin-top: calc(var(--header) + 16px);
+  }
 }
 
 .nudge {
@@ -782,6 +789,7 @@ h2 {
 
   .nudges {
     order: 0;
+    scroll-margin-top: var(--header);
   }
 
   .hero {
