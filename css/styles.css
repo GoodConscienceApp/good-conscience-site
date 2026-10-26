@@ -340,6 +340,10 @@ h2 {
   gap: 28px;
 }
 
+.steps + .payoff {
+  margin: 36px 0 0;
+}
+
 .step {
   margin: 0;
 }
